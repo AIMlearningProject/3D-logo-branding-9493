@@ -26,6 +26,15 @@ cd Centria_3D_Logo_Project/scripts/automation
 python organize_delivery.py
 ```
 
+### Generate Individual Letter Library (NEW!)
+```bash
+# Generate CENTRIA letters (C, E, N, T, R, I, A) - 28 files
+python generate_letter_library.py
+
+# Generate full alphabet (A-Z) - 104 files
+python generate_letter_library.py --full
+```
+
 ---
 
 ## 📁 Project Structure
@@ -48,6 +57,16 @@ project-root/
 │   ├── SETUP_GUIDE.md            # Complete setup instructions
 │   └── templates/
 │       └── TECHNICAL_SPECIFICATIONS.md
+│
+├── Centria_3D_Models/             # Generated 3D models (STL files)
+│   ├── Finnish/                  # Finnish logo variants (4 files)
+│   ├── English/                  # English logo variants (4 files)
+│   ├── C_letter/                 # C-letter variants (4 files)
+│   └── Letters_Library/          # Individual letter library (NEW!)
+│       ├── pin/                  # Letter pins (7 files)
+│       ├── magnet/               # Letter magnets (7 files)
+│       ├── keyring/              # Letter keyrings (7 files)
+│       └── cake_mould/           # Letter cake moulds (7 files)
 │
 ├── docs/                          # Reference materials
 │   ├── guide.md                  # Original project brief
@@ -97,16 +116,28 @@ project-root/
 - Hardware specifications
 - Assembly guides
 
+### 5. Individual Letter Library (NEW!)
+- **28 Letter STL Files** (C, E, N, T, R, I, A × 4 variants)
+- **All Capital Letters** (as per instructor feedback)
+- **Same 4 Variants** (Pin, Magnet, Keyring, Cake Mould)
+- **Modular Design** (Spell custom words and messages)
+- **Expandable** (Full alphabet A-Z support available)
+- **Educational Use** (Tactile learning, spelling aids)
+
+**Tech:** PIL (Pillow), scikit-image, trimesh, automated generation
+
 ---
 
 ## 📊 Project Metrics
 
-- **Total Files Created:** 50+
-- **Lines of Code:** 3,500+
-- **Documentation Pages:** 15+
-- **Scripts:** 13 automation scripts
+- **Total Files Created:** 80+
+- **Lines of Code:** 4,000+
+- **Documentation Pages:** 17+
+- **Scripts:** 14 automation scripts
 - **Components:** 5 React components
-- **Models Generated:** 12 STL files (3 logos × 4 variants)
+- **Models Generated:** 40 STL files
+  - 12 Logo models (3 logos × 4 variants)
+  - 28 Letter models (7 letters × 4 variants)
 
 **Production Capacity:**
 - Prototype: 4 items
